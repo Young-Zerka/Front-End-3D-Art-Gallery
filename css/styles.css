@@ -1,0 +1,84 @@
+@import "../font/dot.css";
+
+* ::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    color-scheme: light;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'TT Interphases Pro Mono Trial';
+    background-color: hsl(30, 5%, 92%);
+}
+
+header {
+    margin: 0 5em;
+    text-align: left;
+}
+
+header img {
+    border-radius: 7px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: 'TT Interphases Pro Trial';
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: hsl(0, 0%, 13%);
+}
+
+main {
+    padding: 5em 0;
+    display: flex;
+    gap: 1.5em;
+    margin: 0 5em;
+}
+
+.collector h2 {
+    font-size: 16px;
+    font-family: 'TT Interphases Pro Trial';
+}
+
+.collector img {
+    width: 223px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.collector p {
+    opacity: 0.3;
+    margin: -0.5em 0;
+}
+
+.collector {
+    cursor: pointer;
+    padding: 1rem 0.5rem 2.5rem 0.5rem;
+    transition: cubic-bezier(.79, .14, .15, .86) 0.3s;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.collector:hover {
+    background: hsla(0, 0%, 87%, 0.6);
+}
+
+.collector:hover h2 {
+    text-decoration: underline;
+}
+
+footer {
+    margin: 0 5em;
+    opacity: 0.9;
+}
